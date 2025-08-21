@@ -9,7 +9,7 @@
 PKG_DIR="/root/repo"
 LOG="/root/update.log"
 PREINST_LOG="/root/preinstalled.log"
-NEW_KERNEL="4.18.0-372.105.1.el8_6.x86_64"
+NEW_KERNEL="4.18.0-553.16.1.el8_10.x86_64"
 
 {
   echo "==== [START] $(date -Is) ===="
