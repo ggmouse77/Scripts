@@ -1,4 +1,4 @@
-#!/usr/bash
+#!/bin/bash
 # RHEL 8.6 -> RHEL 8.10 로컬 레포 업데이트 스크립트
 #  1) /usr/local 이 심볼릭 링크면 제거 후 /usr/local.org → /usr/local 교체
 #  2) /root/repo/*.rpm 일괄 설치/업데이트 (외부 레포 비활성화)
