@@ -1,14 +1,14 @@
 #!/bin/bash
 # RHEL 8.6 -> RHEL 8.10 로컬 레포 업데이트 스크립트
 #  1) /usr/local 이 심볼릭 링크면 제거 후 /usr/local.org → /usr/local 교체
-#  2) /root/repo/*.rpm 일괄 설치/업데이트 (외부 레포 비활성화)
+#  2) /home/repo/*.rpm 일괄 설치/업데이트 (외부 레포 비활성화)
 #  3) 업데이트된 커널(고정 버전)의 usb-storage.ko.xz 삭제 후 dracut 재생성
 #  4) yum repo 파일 고정된 내용으로 /etc/yum.repos.d/rhel.repo 작성
-#  5) 로그: /root/update.log (누적), 사전 패키지 목록: /root/preinstalled.log (덮어쓰기)
+#  5) 로그: /home/update.log (누적), 사전 패키지 목록: /home/preinstalled.log (덮어쓰기)
 
-PKG_DIR="/root/repo"
-LOG="/root/update.log"
-PREINST_LOG="/root/preinstalled.log"
+PKG_DIR="/home/repo"
+LOG="/home/update.log"
+PREINST_LOG="/home/preinstalled.log"
 NEW_KERNEL="4.18.0-553.16.1.el8_10.x86_64"
 
 {
