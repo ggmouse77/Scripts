@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 PKG_DIR="/user/svrauto/SA/OS/2025PM/rhel810_local_rpms"
 LOG="/home/update_check.log"
